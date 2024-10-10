@@ -18,4 +18,5 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
             ORDER BY obj.title
             """)
     Page<MovieCardDTO> findByGenre(Long genreId, Pageable pageable);
+
 }
